@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
-import confetti from 'canvas-confetti'
 
 export default function BubblePopGame() {
   const [bubbles, setBubbles] = useState<{ id: number; x: number; y: number }[]>([])
@@ -67,7 +66,7 @@ export default function BubblePopGame() {
 
   return (
     <div className="p-4 h-screen relative overflow-hidden font-cairo">
-      <h1 className="text-3xl font-bold text-center mb-6 text-cyan-600">طقطق الفقاعات</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-cyan-600">طقطقي الفقاقيع</h1>
       <div className="text-center mb-4">
         <p className="text-xl text-cyan-600">النقط: {score}</p>
         <p className="text-xl text-cyan-600">الوقت: {timeLeft} ثانية</p>
@@ -85,8 +84,8 @@ export default function BubblePopGame() {
         ))
       ) : (
         <div className="text-center">
-          <p className="text-2xl mb-4 text-green-600">انتهت اللعبة! نقطك: {score}</p>
-          <Button onClick={resetGame} className="bg-cyan-500 hover:bg-cyan-600">العب تاني</Button>
+          <p className="text-2xl mb-4 text-green-600">شطوره جبتي : {score}</p>
+          <Button onClick={resetGame} className="bg-cyan-500 hover:bg-cyan-600">العبي تاني</Button>
         </div>
       )}
     </div>

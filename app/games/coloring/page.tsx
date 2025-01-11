@@ -109,7 +109,7 @@ export default function ColoringGame() {
 
   return (
     <div className="p-4 max-w-3xl mx-auto font-cairo">
-      <h1 className="text-3xl font-bold text-center mb-6 text-green-600">لون يا فنان</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-green-600">لوني يا حبيبتي</h1>
       <div className="flex justify-center space-x-2 mb-4">
         {colors.map((c) => (
           <button
@@ -141,9 +141,9 @@ export default function ColoringGame() {
         onPointerOut={stopDrawing}
       />
       <div className="flex justify-center space-x-2">
-        <Button onClick={undo} disabled={undoStack.length <= 1} className="bg-yellow-500 hover:bg-yellow-600">تراجع</Button>
+        <Button onClick={undo} disabled={undoStack.length <= 1} className="bg-yellow-500 hover:bg-yellow-600">ارجعي خطوه</Button>
         <Button onClick={redo} disabled={redoStack.length === 0} className="bg-blue-500 hover:bg-blue-600">إعادة</Button>
-        <Button onClick={clearCanvas} className="bg-red-500 hover:bg-red-600">امسح كل حاجة</Button>
+        <Button onClick={clearCanvas} className="bg-red-500 hover:bg-red-600">امسحي كل حاجة</Button>
       </div>
     </div>
   )

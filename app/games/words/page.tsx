@@ -66,7 +66,7 @@ export default function WordsGame() {
 
   return (
     <div className="p-4 max-w-2xl mx-auto font-cairo">
-      <h1 className="text-3xl font-bold text-center mb-6 text-yellow-600">الكلمة السحرية يا ذكي</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-yellow-600">الكلمة المتلغبطه</h1>
       <div className="text-center mb-4">
         <p className="text-xl text-yellow-600">النقط: {score}</p>
         <p className="text-xl text-yellow-600">الوقت: {timeLeft} ثانية</p>
@@ -74,18 +74,18 @@ export default function WordsGame() {
       {!gameOver ? (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="text-center">
-            <p className="text-2xl font-bold mb-2 text-yellow-600">الكلمة المخلبطة:</p>
+            <p className="text-2xl font-bold mb-2 text-yellow-600">الكلمة الملتخبطه:</p>
             <p className="text-4xl">{scrambledWord}</p>
           </div>
           <Input
             type="text"
             value={userGuess}
             onChange={(e) => setUserGuess(e.target.value)}
-            placeholder="اكتب الكلمة الصح"
+            placeholder="اكتبي الكلمة الصح"
             className="text-center"
           />
           <div className="text-center">
-            <Button type="submit" className="bg-yellow-500 hover:bg-yellow-600">أرسل</Button>
+            <Button type="submit" className="bg-yellow-500 hover:bg-yellow-600">شوفي</Button>
           </div>
         </form>
       ) : (

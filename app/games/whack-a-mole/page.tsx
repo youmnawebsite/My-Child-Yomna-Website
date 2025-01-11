@@ -48,7 +48,7 @@ export default function WhackAMoleGame() {
 
   return (
     <div className="p-4 font-cairo">
-      <h1 className="text-3xl font-bold text-center mb-6 text-brown-600">اضرب الخلد يا شقي</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-brown-600">اضربي البتاع ده يا بنوتي</h1>
       <div className="text-center mb-4">
         <p className="text-xl text-brown-600">النقط: {score}</p>
         <p className="text-xl text-brown-600">الوقت: {timeLeft} ثانية</p>
@@ -67,8 +67,9 @@ export default function WhackAMoleGame() {
       </div>
       {gameOver && (
         <div className="text-center">
-          <p className="text-2xl mb-4 text-green-600">انتهت اللعبة! نقطك: {score}</p>
-          <Button onClick={resetGame} className="bg-brown-500 hover:bg-brown-600">العب تاني</Button>
+          <p className="text-2xl mb-4 text-green-600"> خلصتي اللعبه يحبيبتي
+             نقطك: {score}</p>
+          <Button onClick={resetGame} className="bg-brown-500 hover:bg-brown-600">العبي تاني</Button>
         </div>
       )}
       {gameOver && score >= 25 && confetti()}

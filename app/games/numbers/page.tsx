@@ -92,7 +92,7 @@ export default function NumbersGame() {
 
   return (
     <div className="p-4 max-w-2xl mx-auto font-cairo">
-      <h1 className="text-3xl font-bold text-center mb-6 text-purple-600">احسبها صح يا عبقري</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-purple-600">احسبي يعني تقريبا بتحبي الماث</h1>
       <div className="text-center mb-4">
         <p className="text-xl text-purple-600">النقط: {score}</p>
         <p className="text-xl text-purple-600">الوقت: {timeLeft} ثانية</p>
@@ -108,7 +108,7 @@ export default function NumbersGame() {
             type="number"
             value={userAnswer}
             onChange={(e) => setUserAnswer(e.target.value)}
-            placeholder="اكتب الإجابة"
+            placeholder="اكتبي الإجابة يا شطورة"
             className="text-center"
           />
           <div className="text-center">
@@ -118,7 +118,7 @@ export default function NumbersGame() {
       ) : (
         <div className="text-center">
           <p className="text-2xl mb-4 text-green-600">
-            {score >= 15 ? 'برافو عليك يا عبقري! كسبت اللعبة 🎉' : 'انتهى الوقت!'}
+            {score >= 15 ? 'برافو عليكي يحبيبتي خلصتي اللعبه    🎉' : 'خلص الوقت'}
           </p>
           <p className="text-xl mb-4 text-purple-600">نقطك النهائية: {score}</p>
           <Button onClick={resetGame} className="bg-purple-500 hover:bg-purple-600">العب تاني</Button>
