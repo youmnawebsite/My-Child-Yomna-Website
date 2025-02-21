@@ -7,24 +7,38 @@
 }
 body {
   background-color: #f4c531;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
 }
+
+/* Make the game wrapper responsive */
 .wrapper {
-  box-sizing: content-box;
-  width: 26.87em;
-  padding: 2.5em 3em;
+  width: 90%;
+  max-width: 500px;
+  padding: 2em;
   background-color: #ffffff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 0.6em;
+  border-radius: 10px;
   box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+  text-align: center;
 }
+
+/* Responsive Grid for Cards */
 .game-container {
-  position: relative;
-  width: 100%;
   display: grid;
   gap: 0.6em;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Adjust card size */
+.card-container {
+  width: 22vw;
+  max-width: 100px;
+  height: 22vw;
+  max-height: 100px;
 }
 .stats-container {
   text-align: right;
@@ -32,12 +46,6 @@ body {
 }
 .stats-container span {
   font-weight: 600;
-}
-.card-container {
-  position: relative;
-  width: 6.25em;
-  height: 6.25em;
-  cursor: pointer;
 }
 .card-before,
 .card-after {
@@ -58,6 +66,8 @@ body {
   font-weight: 600;
 }
 .card-after {
+  width: 80%;
+  height: auto;
   background-color: #ffffff;
   transform: rotateY(180deg);
 }
@@ -79,6 +89,8 @@ body {
   top: 0;
 }
 button {
+  font-size: 1em;
+  padding: 10px 15px;
   border: none;
   border-radius: 0.3em;
   padding: 1em 1.5em;
@@ -107,4 +119,10 @@ button {
 #result h4 {
   font-size: 1.8em;
   margin: 0.6em 0 1em 0;
+}
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 25vw;
+    height: 25vw;
+  }
 }
