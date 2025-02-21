@@ -3,18 +3,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Tajawal', 'Poppins', sans-serif;
+  font-family: "tajawal", sans-serif;
 }
 body {
   background-color: #f4c531;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 10px;
 }
-
-/* Make the game wrapper responsive */
 .wrapper {
   box-sizing: content-box;
   width: 26.87em;
@@ -27,24 +20,11 @@ body {
   border-radius: 0.6em;
   box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
 }
-
-/* Responsive Grid for Cards */
 .game-container {
   position: relative;
+  width: 100%;
   display: grid;
   gap: 0.6em;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-/* Adjust card size */
-.card-container {
-  cursor: pointer;
-  position: relative;
-  width: 22vw;
-  max-width: 100px;
-  height: 22vw;
-  max-height: 100px;
 }
 .stats-container {
   text-align: right;
@@ -52,6 +32,12 @@ body {
 }
 .stats-container span {
   font-weight: 600;
+}
+.card-container {
+  position: relative;
+  width: 6.25em;
+  height: 6.25em;
+  cursor: pointer;
 }
 .card-before,
 .card-after {
@@ -72,8 +58,6 @@ body {
   font-weight: 600;
 }
 .card-after {
-  width: 80%;
-  height: auto;
   background-color: #ffffff;
   transform: rotateY(180deg);
 }
@@ -95,8 +79,6 @@ body {
   top: 0;
 }
 button {
-  font-size: 1em;
-  padding: 10px 15px;
   border: none;
   border-radius: 0.3em;
   padding: 1em 1.5em;
@@ -126,9 +108,3 @@ button {
   font-size: 1.8em;
   margin: 0.6em 0 1em 0;
 }
-/* @media screen and (max-width: 600px) {
-  .card-container {
-    width: 25vw;
-    height: 25vw;
-  }
-} */
