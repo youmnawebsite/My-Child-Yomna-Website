@@ -19,6 +19,9 @@ export default function Home() {
       <p className="text-2xl text-center mb-8 text-purple-600 animate-pulse">
         كل الألعاب دي عشان بنوتي تبقى مبسوطه كل ما تزهقي يبنوتي خشي هنا والعبي براحتك❤️
       </p>
+        <p className="text-2xl text-center mb-8 text-purple-600 animate-pulse">
+          في لعبه جديده يبنوتي دوري عليها👀
+        </p>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {games.map((game) => (
           <Link 
